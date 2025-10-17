@@ -4,30 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>UVSI — Unified Vision Solutions, Inc.</title>
-  <meta name="description" content="UVSI builds advanced vision systems for inspection, safety, and enterprise automation. Learn about our services, team, and contact us.">
-
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-  <!-- Structured data for Google rich results -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "UVSI",
-    "url": "https://uvsi-sys.github.io/UVSI/",
-    "logo": "https://uvsi-sys.github.io/UVSI/logo.png",
-    "sameAs": [
-      "https://www.linkedin.com/company/uvsi",
-      "https://twitter.com/uvsi"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "email": "hello@uvsi.example",
-      "contactType": "customer service"
-    }
-  }
-  </script>
+<meta name="description" content="UVSI builds smart systems for inspection, monitoring, and enterprise solutions.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="UVSI — Unified Vision Systems International">
+<meta property="og:description" content="Smart systems for inspection, monitoring, and enterprise solutions.">
+<meta property="og:url" content="https://yourusername.github.io/uvsi-site/">
+<meta property="og:type" content="website">
 
   <style>
     :root{--accent:#0b74ff;--muted:#6b7280;--bg:#f7f9fc;--card:#ffffff}
@@ -41,20 +23,34 @@
     .nav-links{display:flex;gap:18px;align-items:center}
     a{color:inherit;text-decoration:none}
     .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:8px;font-weight:600}
+
+    /* Notification banner */
     .banner{background:#fff3f3;border:1px solid #ffd6d6;color:#822424;padding:12px;border-radius:8px;display:inline-flex;align-items:center;gap:12px;font-weight:600}
+
+    /* Hero */
     .hero{display:flex;gap:32px;align-items:center;padding:48px 0}
     .hero-left{flex:1}
     .hero h1{font-size:34px;margin:0 0 12px}
     .lead{color:var(--muted);font-size:16px}
     .hero-cta{margin-top:18px;display:flex;gap:12px}
     .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(17,24,39,0.04);}
+
+    /* Grid */
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
     .service{padding:18px;border-radius:10px;border:1px solid #eef3fb}
+
+    /* Team */
     .team{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
     .avatar{width:72px;height:72px;border-radius:12px;background:#e9f2ff;display:flex;align-items:center;justify-content:center;font-weight:700}
+
+    /* Footer */
     footer{padding:36px 0;margin-top:36px;color:var(--muted)}
+
+    /* Responsive */
     @media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.team{grid-template-columns:repeat(2,1fr)}.hero{flex-direction:column}.hero h1{font-size:28px}}
     @media (max-width:560px){.grid{grid-template-columns:1fr}.team{grid-template-columns:1fr}.nav-links{display:none}}
+
+    /* Small helpers */
     .muted{color:var(--muted)}
     .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#eef6ff;border:1px solid #e1f0ff;font-weight:600}
   </style>
@@ -82,12 +78,164 @@
   </header>
 
   <main class="container">
+    <!-- Notification (required) -->
     <div style="margin-top:18px;display:flex;justify-content:center">
       <div class="banner" role="status" aria-live="polite">GIVEAWAY CLOSED — Thank you to everyone who entered. Stay tuned for future promotions.</div>
     </div>
 
-    <!-- Hero, Services, About, Team, Careers, Contact, FAQ sections stay unchanged -->
-    <!-- (Use all your current HTML content here as before) -->
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Designing clearer, safer visual systems for a connected world.</h1>
+        <p class="lead">UVSI specializes in advanced vision software and hardware that helps enterprises automate inspection, safety monitoring, and accessibility features across manufacturing, public spaces, and consumer products.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#contact">Get in touch</a>
+          <a href="#services" style="align-self:center;color:var(--accent);font-weight:600">Explore services →</a>
+        </div>
+      </div>
+      <div style="flex:0 0 360px;">
+        <div class="card">
+          <h3 style="margin:0 0 8px">Who we are</h3>
+          <p class="muted" style="margin:0 0 12px">Founded to bridge the gap between AI-driven imaging and real-world reliability, UVSI builds products that are built to perform and engineered to be explainable.</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <div class="pill">R&D</div>
+            <div class="pill">Custom Integration</div>
+            <div class="pill">Enterprise Support</div>
+          </div>
+        </div>
+        <div style="height:14px"></div>
+        <div class="card">
+          <h4 style="margin:0 0 8px">Quick facts</h4>
+          <ul class="muted" style="margin:0;padding-left:18px">
+            <li>Founded: 2018</li>
+            <li>Headquarters: Denver, CO</li>
+            <li>Customers: Manufacturing, Transit, Healthcare</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <h2 style="margin-top:6px">Services</h2>
+      <div class="grid" style="margin-top:12px">
+        <div class="service card">
+          <h3 style="margin-top:0">Vision Integration</h3>
+          <p class="muted">End-to-end integration of cameras, edge compute, and cloud analytics for deployment at scale. We consult, prototype, and operationalize systems with SLAs and monitoring.</p>
+        </div>
+        <div class="service card">
+          <h3 style="margin-top:0">Inspection & QA</h3>
+          <p class="muted">Automated visual inspection pipelines that catch defects earlier and reduce waste. Compatible with high-speed production lines and manual review workflows.</p>
+        </div>
+        <div class="service card">
+          <h3 style="margin-top:0">Safety & Monitoring</h3>
+          <p class="muted">Privacy-first safety monitoring solutions designed to surface hazards and enable rapid human response while protecting personally identifiable information.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Backstory -->
+    <section id="about" style="margin-top:26px">
+      <h2>About UVSI</h2>
+      <div class="card" style="margin-top:12px">
+        <p>UVSI began as a small research group inside a university tech lab. The founders believed that visual intelligence should be trustworthy, auditable, and useful — not just novel. Over the years we evolved into an engineering-first company focusing on reproducible deployments, field maintenance, and clear ROI for customers.</p>
+        <p class="muted">Our approach blends rigorous testing, human-centered design, and modular hardware to deliver systems that last. Whether it’s helping a manufacturer reduce rework or enabling transit agencies to detect hazards faster, our mission is to improve outcomes using visual intelligence.</p>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" style="margin-top:26px">
+      <h2>Leadership</h2>
+      <div class="team">
+        <div class="card" style="display:flex;gap:12px;align-items:center">
+          <div>
+            <div class="avatar">SH</div>
+          </div>
+          <div>
+            <div style="font-weight:700">Samira Hedid</div>
+            <div class="muted">Chief Executive Officer</div>
+            <div class="muted" style="margin-top:6px">Samira leads UVSI with a focus on product reliability and responsible AI. A former research scientist and product leader, she drives company strategy and partnerships.</div>
+          </div>
+        </div>
+
+        <div class="card" style="display:flex;gap:12px;align-items:center">
+          <div>
+            <div class="avatar">JD</div>
+          </div>
+          <div>
+            <div style="font-weight:700">Jeff Dircey</div>
+            <div class="muted">Chief Financial Officer</div>
+            <div class="muted" style="margin-top:6px">Jeff manages finance, operations, and investor relations. He brings experience scaling startups through practical financial planning and transparent reporting.</div>
+          </div>
+        </div>
+
+        <div class="card" style="display:flex;gap:12px;align-items:center">
+          <div>
+            <div class="avatar">CT</div>
+          </div>
+          <div>
+            <div style="font-weight:700">Carla Tran</div>
+            <div class="muted">VP, Engineering</div>
+            <div class="muted" style="margin-top:6px">Carla oversees deployments and leads the systems engineering team responsible for reliability and edge performance.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Careers -->
+    <section id="careers" style="margin-top:26px">
+      <h2>Careers</h2>
+      <div class="card" style="margin-top:12px">
+        <p class="muted">We hire builders: software engineers, systems integrators, product managers, and field technicians. UVSI values curiosity, humility, and a customer-first mindset. Interested in joining? Email us at <strong>careers@uvsi.example</strong> or apply below.</p>
+        <div style="margin-top:12px;display:flex;gap:12px">
+          <a class="btn" href="#contact">Apply now</a>
+          <a href="#team" style="align-self:center;color:var(--accent);font-weight:600">See leadership</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" style="margin-top:26px">
+      <h2>Contact</h2>
+      <div style="display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:12px">
+        <div class="card">
+          <form onsubmit="handleSubmit(event)">
+            <label style="display:block;margin-bottom:8px;font-weight:600">Name</label>
+            <input required placeholder="Your name" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6eefb;margin-bottom:10px">
+            <label style="display:block;margin-bottom:8px;font-weight:600">Email</label>
+            <input required type="email" placeholder="you@company.com" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6eefb;margin-bottom:10px">
+            <label style="display:block;margin-bottom:8px;font-weight:600">Message</label>
+            <textarea required placeholder="Tell us about your project" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6eefb;margin-bottom:12px;min-height:100px"></textarea>
+            <div style="display:flex;gap:10px;align-items:center">
+              <button class="btn" type="submit">Send message</button>
+              <div class="muted" style="font-size:13px">We'll get back within 2 business days.</div>
+            </div>
+          </form>
+        </div>
+        <div class="card">
+          <h4 style="margin-top:0">Headquarters</h4>
+          <p class="muted">Denver, Colorado<br>50 Innovation Way<br>Suite 420</p>
+          <p style="margin-top:12px"><strong>Email</strong><br>hello@uvsi.example</p>
+          <p style="margin-top:8px"><strong>Press</strong><br>press@uvsi.example</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="margin-top:26px">
+      <h2>FAQ</h2>
+      <div class="card" style="margin-top:12px">
+        <details style="margin-bottom:8px"><summary style="font-weight:700">What does UVSI stand for?</summary>
+          <div class="muted" style="margin-top:6px">UVSI is Unified Vision Solutions, Inc., reflecting our focus on integrated vision systems.</div>
+        </details>
+        <details style="margin-bottom:8px"><summary style="font-weight:700">Are your solutions cloud-based?</summary>
+          <div class="muted" style="margin-top:6px">We provide hybrid solutions: edge-first processing with optional cloud analytics and long-term storage.</div>
+        </details>
+        <details style="margin-bottom:8px"><summary style="font-weight:700">How do you handle privacy?</summary>
+          <div class="muted" style="margin-top:6px">Privacy is core. We minimize PII collection, anonymize where possible, and provide audit logs for customers.</div>
+        </details>
+      </div>
+    </section>
 
     <footer style="margin-top:36px;border-top:1px solid #eef3fb;padding-top:18px">
       <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
@@ -98,6 +246,7 @@
   </main>
 
   <script>
+    // small helper to make the contact form non-functional but give feedback
     function handleSubmit(e){
       e.preventDefault();
       alert('Thanks! This is a demo contact form for the UVSI sample site.');
